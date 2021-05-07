@@ -21,7 +21,8 @@ Open your browser at:
 
 <br>
 
-### **Refresh the page a few times, each time it will load a diferente server.**
+**Refresh the page a few times, each time it will load from a diferente server.**
+
 
 Node 1|Node 2 
 :---:|:---: 
