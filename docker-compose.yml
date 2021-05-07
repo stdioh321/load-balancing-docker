@@ -14,24 +14,24 @@ services:
             - node2
             - node3        
     node1:
-        image: nginx
+        image: jmcarbo/nginx-php-fpm
         container_name: node1
         volumes: 
-            - ./index1.html:/usr/share/nginx/html/index.html
+            - ./index.php:/usr/share/nginx/html/index.php
         networks:
             - supernet        
     node2:
-        image: nginx
+        image: jmcarbo/nginx-php-fpm
         container_name: node2
         volumes: 
-            - ./index2.html:/usr/share/nginx/html/index.html
+            - ./index.php:/usr/share/nginx/html/index.php
         networks:
             - supernet        
     node3:
-        image: nginx
+        image: jmcarbo/nginx-php-fpm
         container_name: node3
         volumes: 
-            - ./index3.html:/usr/share/nginx/html/index.html
+            - ./index.php:/usr/share/nginx/html/index.php
         networks:
             - supernet        
             
