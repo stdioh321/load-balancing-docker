@@ -20,6 +20,7 @@ Open your browser at:
 ### **http://localhost:8081**
 
 <br>
+
 ### **Refresh the page a few times, each time it will load a diferente server.**
 
 Node 1|Node 2 
