@@ -19,6 +19,9 @@ Open your browser at:
 
 ### **http://localhost:8081**
 
+<br>
+### **Refresh the page a few times, each time it will load a diferente server.**
+
 Node 1|Node 2 
 :---:|:---: 
 ![Node 1](./docs/screenshots/screenshot_01.png) |![Node 2](./docs/screenshots/screenshot_02.png)
