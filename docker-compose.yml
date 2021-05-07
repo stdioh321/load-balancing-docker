@@ -1,0 +1,40 @@
+version: "3"
+services:
+    loadbalancer:
+        build:
+            dockerfile: loadbalancer.dockerfile
+            context: .
+        ports: 
+            - "8081:80"
+        container_name: loadbalancer
+        networks:
+            - supernet
+        depends_on: 
+            - node1
+            - node2
+            - node3        
+    node1:
+        image: nginx
+        container_name: node1
+        volumes: 
+            - ./index1.html:/usr/share/nginx/html/index.html
+        networks:
+            - supernet        
+    node2:
+        image: nginx
+        container_name: node2
+        volumes: 
+            - ./index2.html:/usr/share/nginx/html/index.html
+        networks:
+            - supernet        
+    node3:
+        image: nginx
+        container_name: node3
+        volumes: 
+            - ./index3.html:/usr/share/nginx/html/index.html
+        networks:
+            - supernet        
+            
+networks: 
+    supernet:
+        driver: bridge
