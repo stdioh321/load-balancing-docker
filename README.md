@@ -1,7 +1,7 @@
 # load-balancing-docker
 A Load Balancer with docker-compose and nginx.
 
-This test runs 4 docker containers running nginx, 3 of then are nodes with web pages and the last one is the load balancer that each time the page is requested the load balancer delivers one of the nodes.
+This test runs 4 docker containers running nginx, 3 of then are nodes with web pages and the last one is the load balancer that each time the page is requested delivers one of the nodes.
 
 
 # Setup 
@@ -38,3 +38,6 @@ Node 3|  |
 * [Docker](https://docs.docker.com/engine/install/ubuntu/)
 
 * [Docker Compose](https://docs.docker.com/compose/install/)
+
+* [Nginx](https://www.nginx.com/)
+

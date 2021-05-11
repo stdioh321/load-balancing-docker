@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page: 0</title>
+</head>
+<body>
+    <h1>Test Page</h1>
+    <script>
+        window.onload = ()=>{
+            var tit = document.querySelector("title");
+            var h1 = document.querySelector("h1");
+            var count = 1;
+            setInterval(()=>{
+                tit.innerHTML = "Test Page: " + count;
+                h1.innerHTML = "Test Page: " + count;
+                count++;
+            },1000)
+        }
+    </script>
+</body>
+</html>
